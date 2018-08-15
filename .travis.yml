@@ -1,0 +1,17 @@
+sudo: true
+
+env:
+- PS_FORMAT=user,pid,ppid,nlwp,%mem,args
+
+before_install:
+
+install:
+- pip install --user pygments
+- alias pygmentize="pygmentize -O full"
+
+script:
+- cat /etc/sudoers
+- cat /etc/sudo.conf || true
+
+after_script:
+- man sudo
