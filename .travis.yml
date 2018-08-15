@@ -17,6 +17,11 @@ script:
 - sudo file /etc/sudoers.d/google_sudoers
 - sudo file /etc/sudoers.d/README
 - sudo file /etc/sudoers.d/travis
+- sudo cat /etc/sudoers.d/90-cloud-init-users
+- sudo cat /etc/sudoers.d/env_keep
+- sudo cat /etc/sudoers.d/google_sudoers
+- sudo cat /etc/sudoers.d/README
+- sudo cat /etc/sudoers.d/travis
 - cat /etc/sudo.conf || true
 
 after_script:
