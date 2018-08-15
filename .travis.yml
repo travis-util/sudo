@@ -15,4 +15,5 @@ script:
 - cat /etc/sudo.conf || true
 
 after_script:
+- whoami
 - man sudo
