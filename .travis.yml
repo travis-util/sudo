@@ -11,7 +11,7 @@ install:
 
 script:
 - sudo cat /etc/sudoers
-- sudo ls --color /etc/sudoers.d
+- sudo ls /etc/sudoers.d --color
 - sudo file /etc/sudoers.d/90-cloud-init-users
 - sudo file /etc/sudoers.d/env_keep
 - sudo file /etc/sudoers.d/google_sudoers
