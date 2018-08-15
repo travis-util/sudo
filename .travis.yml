@@ -12,11 +12,11 @@ install:
 script:
 - sudo cat /etc/sudoers
 - sudo ls --color /etc/sudoers.d
-- sudo file 90-cloud-init-users
-- sudo file env_keep
-- sudo file google_sudoers
-- sudo file README
-- sudo file travis
+- sudo file /etc/sudoers.d/90-cloud-init-users
+- sudo file /etc/sudoers.d/env_keep
+- sudo file /etc/sudoers.d/google_sudoers
+- sudo file /etc/sudoers.d/README
+- sudo file /etc/sudoers.d/travis
 - cat /etc/sudo.conf || true
 
 after_script:
