@@ -10,7 +10,7 @@ install:
 - alias pygmentize="pygmentize -O full"
 
 script:
-- cat /etc/sudoers
+- sudo cat /etc/sudoers
 - cat /etc/sudo.conf || true
 
 after_script:
