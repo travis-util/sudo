@@ -11,7 +11,7 @@ install:
 
 script:
 - sudo cat /etc/sudoers
-- ls /etc/sudoers.d
+- sudo ls /etc/sudoers.d
 - cat /etc/sudo.conf || true
 
 after_script:
